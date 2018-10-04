@@ -3,7 +3,11 @@
 ul, li {
 	list-style: none;
 }
-
+h1{
+	font: 1.5em arial,sans-serif;
+	font-weight: bold;
+	margin: 10px;
+}
 .inner {
 	padding: 10px;
 	border: 1px solid black;
@@ -49,12 +53,11 @@ img {
 
 .contents {
 	width: 100%;
-	margin-left: 80px;
 	padding: 10px;
 	box-sizing: border-box;
 }
 
-.contents {
+.contents1 {
 	background-color: green;
 	min-height: 350px;
 }
@@ -72,8 +75,8 @@ img {
 }
 
 .benners {
-	max-height: 200px;
-	max-width: 200px;
+	max-height: 120px;
+	max-width: 120px;
 	margin: 10px;
 	background-color: maroon;
 	border: 1px thick red;
