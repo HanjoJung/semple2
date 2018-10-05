@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 ul, li {
 	list-style: none;
 }
@@ -7,7 +6,7 @@ ul, li {
 h1 {
 	font: 1.5em arial, sans-serif;
 	font-weight: bold;
-	margin: 10px;
+	margin: 5px;
 }
 
 .inner {
@@ -34,12 +33,11 @@ img {
 	z-index: 9999;
 	position: fixed;
 	top: 0px;
-	background-color: fuchsia;
+	background-color: #00c73c;
 }
 
 #nav {
 	top: 70px;
-	left: 10px;
 	width: 80px;
 	height: 500px;
 	position: fixed;
@@ -54,6 +52,7 @@ img {
 	position: relative;
 	text-align: center;
 	display: block;
+	cursor: pointer;
 }
 
 #main {
@@ -67,16 +66,26 @@ img {
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
-	background-color: purple;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.contents p {
+	font-size: 0.8em;
+	text-indent: 2em;
+}
+.contents h1 {
+	font-size: 1.3em;
 }
 
 .contents p, h1 {
-	text-indent: 2em;
-	background-color: orange;
+	text-align: left;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
 }
 
-.contents1 {
-	min-height: 350px;
+.box {
+	display: inline-block;
 }
 
 .photobox {
@@ -84,7 +93,7 @@ img {
 	width: 200px;
 	float: left;
 	overflow: hidden;
-	margin: 10px;
+	margin: 10px 60px;
 }
 
 .photobox:before {
@@ -100,6 +109,7 @@ img {
 	bottom: 0;
 	left: 0;
 }
+
 .textbox {
 	position: relative;
 	width: 300px;
@@ -111,7 +121,7 @@ img {
 .textbox:before {
 	content: "";
 	display: block;
-	padding-top: 150%;
+	padding-top: 100%;
 }
 
 .textbox .text {
@@ -125,16 +135,14 @@ img {
 .benner1 {
 	width: 100%;
 	height: 100%;
-	background-color: navy;
 }
 
 .benners {
 	max-height: 120px;
 	max-width: 120px;
 	margin: 10px;
-	border: 1px thick red;
 	display: inline-block;
-	background-color: blue;
+	background-color: olive;
 }
 
 #footer {
@@ -142,5 +150,5 @@ img {
 	height: 50px;
 	bottom: 0px;
 	position: relative;
-	background-color: aqua;
+	background-color: #00c73c;
 }
