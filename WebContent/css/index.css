@@ -3,11 +3,13 @@
 ul, li {
 	list-style: none;
 }
-h1{
-	font: 1.5em arial,sans-serif;
+
+h1 {
+	font: 1.5em arial, sans-serif;
 	font-weight: bold;
 	margin: 10px;
 }
+
 .inner {
 	padding: 10px;
 	border: 1px solid black;
@@ -32,21 +34,31 @@ img {
 	z-index: 9999;
 	position: fixed;
 	top: 0px;
-	background-color: aqua;
+	background-color: fuchsia;
 }
 
 #nav {
+	top: 70px;
+	left: 10px;
 	width: 80px;
 	height: 500px;
 	position: fixed;
-	background-color: black;
 	z-index: 9998;
+	width: 80px;
+}
+
+#nav a {
+	width: 80px;
+	height: 100px;
+	background-color: silver;
+	position: relative;
+	text-align: center;
+	display: block;
 }
 
 #main {
 	min-width: 200px;
 	max-width: 1200px;
-	background-color: fuchsia;
 	margin: 70px auto 0;
 	width: 70%;
 }
@@ -55,32 +67,74 @@ img {
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
+	background-color: purple;
+}
+
+.contents p, h1 {
+	text-indent: 2em;
+	background-color: orange;
 }
 
 .contents1 {
-	background-color: green;
 	min-height: 350px;
 }
 
 .photobox {
-	max-width: 350px;
-	max-height: 350px;
-	width: 100%;
+	position: relative;
+	width: 200px;
 	float: left;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.photobox:before {
+	content: "";
+	display: block;
+	padding-top: 150%;
+}
+
+.photobox .photo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.textbox {
+	position: relative;
+	width: 300px;
+	float: left;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.textbox:before {
+	content: "";
+	display: block;
+	padding-top: 150%;
+}
+
+.textbox .text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .benner1 {
 	width: 100%;
 	height: 100%;
+	background-color: navy;
 }
 
 .benners {
 	max-height: 120px;
 	max-width: 120px;
 	margin: 10px;
-	background-color: maroon;
 	border: 1px thick red;
 	display: inline-block;
+	background-color: blue;
 }
 
 #footer {
@@ -88,5 +142,5 @@ img {
 	height: 50px;
 	bottom: 0px;
 	position: relative;
-	background-color: blue;
+	background-color: aqua;
 }
